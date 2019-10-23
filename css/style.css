@@ -1,0 +1,263 @@
+*{
+padding : 0;
+margin : 0;
+box-sizing: border-box;  
+}
+html,body{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  line-height: 1.4;
+}
+a{
+ text-decoration: none; 
+ color: white;
+}
+p{
+  margin : 0.75rem 0;
+}
+
+
+/* Utility Class */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+.text-centre{
+
+  text-align: center;
+
+}
+.green-display{
+  color: rgb(42, 197, 42);
+}
+
+.bg-light{
+background: white;
+color: #333;
+}
+.bg-dark{
+  background:#333;
+  color: white;
+}
+.lead{
+   font-size: 1.3rem ;
+   margin-bottom: 2rem;
+}
+.btn{
+  color: white;
+  background:rgb(42, 197, 42);
+  font-size:1.3rem;
+  padding: 0.6rem;
+  border:none;
+  border-radius: 12px;
+}
+.btn:hover{
+  background: rgb(132, 136, 132);
+  color: rgb(59, 255, 59);
+}
+.py-1 { padding:1.5rem 0; }
+.py-2 { padding:2rem 0; }
+.py-3 { padding:3rem 0; }
+
+.p-1 { padding:1.5rem; }
+.p-2 { padding:2rem; }
+.p-3 { padding:3rem; }
+
+.heading{
+  font-size: 4rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+}
+.m-heading
+{
+  font-size: 2.5rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+}
+.list{
+
+margin: 0.5rem 0;
+list-style: none;
+}
+.list li{
+  padding : 0.5rem 0;
+  border-bottom:#444 dotted 1px ;
+}
+
+/* ------------------------------NavBar----------------------------- */
+#nav-bar{
+  display:flex;
+  position: sticky;
+  top:0;
+  background: black;
+  color: rgb(255, 255, 255);
+  font-size: 19px;
+  justify-content: space-between;
+  z-index: 1;
+  padding : 1rem;
+}
+#nav-bar ul{
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+#nav-bar ul li a{
+  color: aliceblue;
+  padding: 0.75rem;
+  margin: 0px 0.2rem ;
+  
+}
+#nav-bar ul li a:hover{
+  background: rgb(132, 136, 132);
+  color: rgb(59, 255, 59);
+  border-radius: 5px;
+}
+
+/* ---------------------------Show-Case------------------------ */
+
+#showcase{
+  display: flex;
+  flex-direction: column;
+  background: #333 url('../img/showcase.jpg') no-repeat center center/cover;
+  height: 100vh;
+  color: white;
+}
+#showcase .showcase-content{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 2rem;
+  /*----OverLay---*/
+  /* top:70px;
+  left:0;
+  right:0;
+  bottom:0; */
+  background-color: rgba(0,0,0,0.5);
+}
+
+/* ------------------------------------Section-what------------------------------- */
+
+#what .items{
+  display: flex;
+  padding: 1rem;
+}
+
+#what .items .item{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding:1rem;
+}
+#what .items .item i{
+  background: rgb(59, 255, 59);
+  padding:1rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+
+}
+
+/* --------------------------------------------------Section-who-we-are-------------------------------------------- */
+#who{
+  display: flex;
+  font-size: 1.25rem;
+  text-align: justify;
+}
+#who div{
+  flex: 1;
+}
+#who .who-img
+{
+  background: url('../img/people.jpg') no-repeat center center/cover;
+}
+
+
+
+/* ---------------------------------------------Section-Clinets--------------------------------------- */
+
+#clients .items{
+  display: flex;
+}
+#clients .items img{
+  display: block;
+  margin: auto;
+  width:55%;
+}
+
+
+/* -------------------------------------Contact-Us------------------------------------------------------ */
+
+#Contact{
+  display: flex;
+  
+}
+#Contact .contact-form{
+  
+  background: black;
+  color: white;
+  flex: 1;
+}
+#Contact .map{
+  background: white;
+  flex: 1;
+}
+
+#Contact .contact-form .form-group {
+  margin: 0.75rem;
+}
+#Contact .contact-form lable{
+  display: block;
+  font-size: 1.3rem;
+  padding-bottom: 0.3rem;
+}
+#Contact p{
+  font-size: 1.3rem;
+}
+#Contact .contact-form .form-group input,
+#Contact .contact-form .form-group textarea{
+  width : 100%;
+  padding:0.45rem;
+  border-radius: 1rem;
+}
+#Contact .btn-1
+{
+  background:rgb(42, 197, 42);
+  color: white;
+  padding: 0.9rem;
+  border-radius: 0.65rem;
+}
+#Contact .contact-form a{
+  padding: 0.6rem;
+  padding-top: 0.6rem;
+  width:20%;
+  border-radius: 3rem;
+  font-size: 1.1rem;
+  text-align: center;
+  display: block;
+  margin: auto;
+  margin-top: 2rem;
+  font-family:Cambria;
+}
+#Contact .contact-form a:hover{
+background:white;
+  color: black;
+  border-radius: 3rem;
+} 
+
+/* ------------------------------Footer-------------------------- */
+
+#main-footer{
+background: rgb(65, 61, 61);
+color: white;
+text-align: center;
+font-size: 1.2rem;
+padding:1.5rem 0; 
+}
+
+
+
